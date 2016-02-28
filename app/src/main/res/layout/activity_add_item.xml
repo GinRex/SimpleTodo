@@ -5,14 +5,14 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    tools:context="com.dattgk.simpletodo.EditItemActivity"
+    tools:context="com.dattgk.simpletodo.AddItem"
     android:clickable="false">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceMedium"
-        android:text="Edit Item Below:"
+        android:text="Add Item:"
         android:id="@+id/tvAddItem"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
@@ -23,7 +23,7 @@
         android:layout_height="wrap_content"
         android:inputType="textMultiLine"
         android:ems="10"
-        android:id="@+id/etNameEdit"
+        android:id="@+id/etNameAdd"
         android:layout_below="@+id/tvAddItem"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -31,19 +31,20 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Save"
-        android:id="@+id/btnSave"
-        android:onClick="SaveItem"
-        android:layout_below="@+id/rbtnpriorityEdit"
+        android:text="Add"
+        android:id="@+id/btnAdd"
+        android:onClick="AddItem"
+        android:layout_below="@+id/rbtnpriorityAdd"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true" />
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="42dp" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="date"
         android:ems="10"
-        android:id="@+id/etDateEdit"
+        android:id="@+id/etDate"
         android:layout_below="@+id/tvDateEdit"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
@@ -54,18 +55,17 @@
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:text="Date:"
         android:id="@+id/tvDateEdit"
-        android:layout_below="@+id/etNameEdit"
+        android:layout_below="@+id/etNameAdd"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true" />
 
     <RadioGroup
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/rbtnpriorityEdit"
-        android:layout_below="@+id/etDateEdit"
+        android:layout_below="@+id/etDate"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="29dp">
+        android:id="@+id/rbtnpriorityAdd">
 
         <RadioButton
             android:layout_width="wrap_content"
@@ -88,5 +88,4 @@
             android:id="@+id/rbtnLow"
             android:checked="false" />
     </RadioGroup>
-
 </RelativeLayout>
