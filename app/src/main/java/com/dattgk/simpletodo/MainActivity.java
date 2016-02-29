@@ -133,8 +133,10 @@ public class MainActivity extends AppCompatActivity {
             }.getType();
 
             items = gson.fromJson(json, type);
+            if (items == null) items = new ArrayList<TodoList>();
             //itemsAdapter.notifyDataSetChanged();
         } catch (NullPointerException e) {
+
             items = new ArrayList<TodoList>();
         }
     }
