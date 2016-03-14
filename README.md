@@ -41,7 +41,7 @@ Errors occured when attempting to save/load ArrayList of Object, but now it has 
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2016] [Dat Nguyen]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
